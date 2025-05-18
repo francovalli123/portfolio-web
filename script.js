@@ -79,6 +79,9 @@ const translations = {
     footer: "&copy; 2025 Personal Portfolio Web. All rights reserved.",
     contactTitle: "Contact me",
     contactText: "You can reach me at <a href='mailto:frankovalli123@gmail.com'>frankovalli123@gmail.com</a>.",
+    aboutTitle: "About me",
+    aboutP1: "Greetings! My name is <strong>Franco Agustín Valli</strong>. I'm 19 years old and I'm from Argentina. I'm a Systems Engineering student at UTN, Facultad Regional Delta, located in Campana, Buenos Aires.",
+    aboutP2: "Currently, I'm learning frontend development on my own. At college, I'm studying Object-Oriented Programming, how a compiler works (going through the lexical, syntactic, and semantic analysis stages), Computer Architecture, and many other topics.",
     langToggle: "ES"
   },
   es: {
@@ -114,6 +117,10 @@ const translations = {
     contactTitle: "Contáctame",
     contactText: "Podés contactarme en <a href='mailto:frankovalli123@gmail.com'>frankovalli123@gmail.com</a>.",
     footer: "&copy; 2025 Portfolio personal. Todos los derechos reservados.",
+    // Traducir al español
+    aboutTitle: "Sobre mí",
+    aboutP1: "¡Hola! Me llamo <strong>Franco Agustín Valli</strong>. Tengo 19 años y soy de Argentina. Estudio Ingeniería en Sistemas en la UTN, Facultad Regional Delta, ubicada en Campana, Buenos Aires.",
+    aboutP2: "Actualmente estoy aprendiendo desarrollo frontend por mi cuenta. En la facultad estoy estudiando Programación Orientada a Objetos, cómo funciona un compilador (atravesando las etapas léxica, sintáctica y semántica), Arquitectura de Computadoras y muchos otros temas.",
     langToggle: "EN"
   }
 };
@@ -158,6 +165,9 @@ function updateLanguage(lang) {
   });
   springText.querySelector("h4:nth-of-type(3)").textContent = t.springWhere;
   springText.querySelector("p:nth-of-type(2)").innerHTML = t.springLink;
+  document.getElementById('about-title').textContent = t.aboutTitle;
+  document.getElementById('about-p1').innerHTML = t.aboutP1;
+  document.getElementById('about-p2').textContent = t.aboutP2;
 
   const contactSection = document.querySelector('#contact');
   contactSection.querySelector('h2').textContent = t.contactTitle;
