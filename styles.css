@@ -1,0 +1,176 @@
+/* Fondo animado de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #0b132b, #1c2541, #3a506b);
+}
+
+
+/* Asegura que todos los links, incluso mailto, tengan el mismo color */
+a {
+    color: inherit; /* o poné el color que uses para otros links, por ejemplo: #f0f0f0 */
+    color: #ff6f61
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff6f61
+}
+
+
+/* Texto general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e6f1; /* Blanco suave */
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #f0f4f8;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+span {
+    color: #ff6f61; /* Rojo anaranjado vibrante */
+}
+
+main {
+  margin: 20px;
+  padding-top: 80px; /* Ajusta según el alto del header */
+}
+
+header {
+  background-color: #14213d; /* Azul oscuro */
+  padding: 10px;
+  color: #f0f4f8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(20, 33, 61, 0.9);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 12px;
+}
+
+nav ul li a {
+    color: #e0e6f1;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff6f61;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(20, 33, 61, 0.85);
+    color: #a3a9b8;
+    position: relative;
+    z-index: 1;
+    font-size: 0.9rem;
+}
+
+section {
+  scroll-margin-top: 100px;
+}
+
+section h2 {
+  color: #ff6f61; /* Rojo anaranjado */
+  font-size: 2.4rem;
+  font-weight: 700;
+  border-bottom: 4px solid #ff6f61;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+section h3 {
+  cursor: pointer;
+  color: #a3a9b8; /* Gris claro */
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ff6f61;
+  padding-left: 12px;
+  text-transform: capitalize;
+  letter-spacing: 0.6px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+section h3:hover {
+  color: #ff6f61;
+  border-color: #ff9a76; /* Un naranja más suave para el hover */
+}
+
+.project-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* espacio entre imagen y texto */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* para que en pantallas chicas se acomode en vertical */
+}
+
+.project-image {
+    width: 200px;
+    height: 200px; /* 🔹 Fijás un alto uniforme */
+    object-fit: cover; /* 🔹 Recorta manteniendo proporción sin deformar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .project-image {
+    width: 70vw;      /* 70% del ancho del viewport */
+    max-width: 280px; /* opcional: no pasarse de cierto tamaño */
+    height: auto;     /* para mantener proporción */
+    aspect-ratio: 1 / 1; /* para mantener altura igual a ancho */
+  }
+}
+
+
+.project-text {
+    flex: 1;
+    min-width: 250px;
+}
+
+.btn-lang {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn-lang:hover {
+    background-color: white;
+    color: black;
+}

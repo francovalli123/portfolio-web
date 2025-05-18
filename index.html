@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <!-- This acts like a container for all the stuff that isn't the content showed to the page's viewers -->
+    <head>
+            <title>Personal Portfolio Website</title>
+
+            <!-- This links the css and js files to the index.html -->
+            <link rel="stylesheet" type="text/css" href="styles.css">
+
+            <!-- This element ensure page renders at the width of the browser viewport -->
+            <meta name="viewport" content="width=device-width">
+            
+            <!-- This element sets the character set the document should use to UTF-8 -->
+            <meta charset="utf-8">
+            <!-- AOS CSS -->    
+            <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    </head>
+
+    <!-- This contains all the content that is going to be showed to the web users -->
+    <body>
+        <!-- The header of the website -->
+        <header>
+            <!-- Navigation bar -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" id="scroll-to-top">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="language-toggle" class="btn-lang">ES</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>I'm Franco Agustín <span>Valli</span></h1>
+            <!-- Sections of the page -->
+            <section id="projects" data-aos="fade-up">
+            <h2>My projects</h2>
+            <ul>
+                <h3 id="two-complement-title">Two's complement algorithm</h3>
+                <div id="two-complement-content" class="project-content">
+                    <div class="project-row">
+                        <img src="images/twos-complement.png" alt="Two's complement algorithm illustration" class="project-image" />
+                        <div class="project-text">
+                            <p>This algorithm represents signed binary numbers using two's complement. The input is a negative number in the decimal system, and the output is its representation in the binary system.</p>
+                            <p>You can check it out on <a href="https://github.com/francovalli123/Two-s-Complement"><span>GitHub</span></a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="django-title">Blog-style website built with Django.</h3>
+                <div id="django-content" class="project-content">
+                    <div class="project-row">
+                        <img src="images/django-project.png" alt="Screenshot of Django blog-style website" class="project-image" />
+                        <div class="project-text">
+                            <h4>What is it about?</h4>
+                            <p>TechZone is a website that simulates a platform for uploading tech-related products.</p>
+                            <h4>What can you do?</h4>
+                            <p>It allows users to contact each other for convenience in case they're interested in acquiring products. It's important to note that each product can only be deleted or updated by its owner. If a user is not the owner of a product, they can only view its details. Additionally, a user cannot edit or delete another user's profile.</p>
+                            <p>On TechZone, you can register, log in, log out, create a profile, update it, view it, add products (with or without photos), and modify or delete them if you're the owner of the post. As mentioned earlier, users can also send messages to each other through the "Send Message" section and check their inbox in the "View Messages" section.</p>
+                            <p>The navigation bar also includes an "About" section, which provides a brief description of what TechZone is.</p>
+                            <h4>Where can I see it?</h4>
+                            <p>You can check it out on <a href="https://www.youtube.com/watch?v=3ATH6il9M9k&ab_channel=FrancoValli"><span>Youtube</span></a> or <a href="https://github.com/francovalli123/Proyecto-Final-40425"><span>GitHub</span></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 id="springboot-title">Application built with Spring Boot</h3>
+                <div id="springboot-content" class="project-content">
+                    <div class="project-row">
+                        <img src="images/springboot-app.png" alt="Spring Boot application screenshot" class="project-image" />
+                        <div class="project-text">
+                            <h4>What is it about?</h4>
+                            <p>The project consists of developing an application that allows us to manage the sales of a store. It includes a Postman collection to test the project and the SQL script to create the database tables.</p>
+                            <h4>Specific objetives</h4>
+                            <ul>
+                                <li>Understanding business changes.</li>
+                                <li>Adding validations.</li>
+                                <li>Consuming external services.</li>
+                                <li>System validation against new requirements.</li>
+                            </ul>
+                            <h4>Where can I see it?</h4>
+                            <p>You can check it out on <a href="https://github.com/francovalli123/Proyecto-Final-Java-Valli"><span>GitHub</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" data-aos="fade-up">
+            <div>
+                <h2>Contact me</h2>
+                <p>You can reach me at <a href="mailto:frankovalli123@gmail.com"><span>frankovalli123@gmail.com</span></a>.</p>
+            </div>
+        </section>
+        </main>
+        
+        
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Personal Portfolio Web. All rights reserved.</p>
+        </footer>
+        
+        <!-- This links the js file with the index.html x-->
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <div id="particles-js"></div>
+        <!-- Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Configuración de las partículas -->
+    <script>
+    particlesJS("particles-js", {
+        "particles": {
+        "number": {
+            "value": 80,
+            "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": {
+            "value": 0.3,
+            "random": true
+        },
+        "size": {
+            "value": 3,
+            "random": true
+        },
+        "move": {
+            "enable": true,
+            "speed": 1.5
+        }
+        },
+        "interactivity": {
+        "events": {
+            "onhover": { "enable": true, "mode": "repulse" },
+            "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+            "repulse": { "distance": 100 },
+            "push": { "particles_nb": 4 }
+        }
+        },
+        "retina_detect": true
+    });
+    </script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 1000, // duración en milisegundos
+        once: true // animar solo una vez al hacer scroll
+         });
+    </script>
+
+
+
+    </body>
+
+</html>
