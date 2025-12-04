@@ -119,7 +119,7 @@ const translations = {
     footer: "&copy; 2025 Portfolio personal. Todos los derechos reservados.",
     // Traducir al español
     aboutTitle: "Sobre mí",
-    aboutP1: "¡Hola! Me llamo <strong>Franco Agustín Valli</strong>. Tengo 19 años y soy de Argentina. Estudio Ingeniería en Sistemas en la UTN, Facultad Regional Delta, ubicada en Campana, Buenos Aires.",
+    aboutP1: "¡Hola! Me llamo <strong>Franco Agustín Valli</strong>. Tengo 20 años y soy de Argentina. Estudio Ingeniería en Sistemas en la UTN, Facultad Regional Delta, ubicada en Campana, Buenos Aires.",
     aboutP2: "Actualmente estoy aprendiendo desarrollo frontend por mi cuenta. También estoy aprendiendo los conceptos básicos de ciberseguridad e ingeniería en IA. ",
     langToggle: "EN"
   }
