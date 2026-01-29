@@ -81,7 +81,7 @@ const translations = {
     contactText: "You can reach me at <a href='mailto:frankovalli123@gmail.com'>frankovalli123@gmail.com</a>.",
     aboutTitle: "About me",
     aboutP1: "Greetings! My name is <strong>Franco Agustín Valli</strong>. I'm 20 years old and I'm from Argentina. I'm a Systems Engineering student at UTN, Facultad Regional Delta, located in Campana, Buenos Aires.",
-    aboutP2: "Currently, I'm learning frontend development on my own. I'm also learning the basic concepts of CyberSecurity and AI Engineering ",
+    aboutP2: "I like to learn new things on my own. Currently, I'm learning the basic concepts of AI Engineering..",
     langToggle: "ES"
   },
   es: {
@@ -120,7 +120,7 @@ const translations = {
     // Traducir al español
     aboutTitle: "Sobre mí",
     aboutP1: "¡Hola! Me llamo <strong>Franco Agustín Valli</strong>. Tengo 20 años y soy de Argentina. Estudio Ingeniería en Sistemas en la UTN, Facultad Regional Delta, ubicada en Campana, Buenos Aires.",
-    aboutP2: "Actualmente estoy aprendiendo desarrollo frontend por mi cuenta. También estoy aprendiendo los conceptos básicos de ciberseguridad e ingeniería en IA. ",
+    aboutP2: "Me gusta aprender cosas nuevas por mi cuenta. Actualmente estoy aprendiendo los conceptos básicos de Ingenería en IA.",
     langToggle: "EN"
   }
 };
